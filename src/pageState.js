@@ -1,5 +1,5 @@
-let isMobile = window.matchMedia('(max-width: 600px)');
-let isTablet = window.matchMedia('(min-width: 601px) and (max-width: 960px)');
+let isMobile = window.matchMedia('(max-width: 400px)');
+let isTablet = window.matchMedia('(min-width: 401px) and (max-width: 960px)');
 let isDesktop = window.matchMedia('(min-width: 961px)');
 
 export const getState = () => {
@@ -8,6 +8,6 @@ export const getState = () => {
     if (isDesktop) return 'desktop';
 }
 
-// export default {
-//     isMobile, isTablet, isDesktop
+// export const pageUpdate = () => {
+
 // }
