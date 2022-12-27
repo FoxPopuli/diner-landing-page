@@ -1,31 +1,17 @@
 import './style.css';
 import {getState} from './pageState';
-import {headerFactory} from './header';
+import {header} from './header';
+import {sideBar} from './sidebar';
+
+const main = document.createElement('div');
+main.className = 'main';
+main.appendChild(header);
+main.appendChild(sideBar);
 
 
-const testItemsLeft = [
-    {
-        name: "Link 1",
-        href: "#"
-    },
-    {
-        name: "Link 2",
-        ref: '#'
-    },
-    {
-        name: "Link 3",
-        ref: '#'
-    },
-]
 
 
-const testItemsRight = [...testItemsLeft];
-
-const body = document.body;
-
-body.appendChild(
-    headerFactory(testItemsLeft, testItemsRight)
-)
+document.body.appendChild(main)
 
 // console.log(getState())
 // console.log(test)

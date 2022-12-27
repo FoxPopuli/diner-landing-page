@@ -2,7 +2,9 @@
     --link-visited: #ca9c5e;
     --default-font: Arial, sans-serif;
     --icon-radius: 10px;
-    --icon-size: 20px;
+    --large-icon-size: 40px;
+    --medium-icon-size: 30px;
+    --small-icon-size: 20px;
 }
 
 * {
@@ -11,10 +13,7 @@
     box-sizing: border-box;
 }
 
-/* Toggles */
-.invis {
-    display:none;
-}
+
 
 /* Element Styles */
 body {
@@ -24,65 +23,84 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin: 50px;
+    justify-content: space-between;
+    width: 100vw;
     flex-wrap: wrap;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-}
 
-li {
-    margin: 20px;
-    /* text-decoration: none; */
 
-}
-
-a {
+header a, .side-nav a {
     font-family: var(--default-font);
-    /* font-weight: */
     text-decoration: none;
     color: white;
-    margin: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+
 }
-
-
 
 a:hover, a:active {
     color: var(--link-visited);
 }
 
 header img {
-    width: var(--icon-size);
+    width: var(--large-icon-size);
+    margin: 10px;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    body {
-        background-color: red;
-    }
-
-    ul {
-        display: none;
-    }
-
-    header button {
-        display: block;
-    }
+.social-links {
+    display: flex;
 }
 
+body {
+    background-color: red;
+}
+
+header ul {
+    display: none;
+    list-style: none;
+}
+
+header button {
+    display: block;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #000;
+    align-items: center
+}
+
+a {
+    text-align: center;
+}
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 563px) and (max-width: 960px) {
     body {
         background-color: orange;
     }
 
-    header button {
+    header .menu-button {
         display: none;
     }
+
+    header img {
+        width: var(--medium-icon-size);
+    }
+
+    header ul {
+        display: flex;
+    }
+
 }
 
 /* Desktop Styles */
@@ -91,7 +109,20 @@ header img {
         background-color: blue;
     }
 
-    header button {
+    header .menu-button {
         display: none;
     }
+
+    header img {
+        width: var(--small-icon-size);
+    }
+
+    header ul {
+        display: flex;
+    }
+}
+
+/* Toggles */
+.invis {
+    display: none
 }
