@@ -3,13 +3,21 @@
 // the children property must be a DOM element (recursion to fix?)
 export default (obj) => {
     const {type, ...rest} = obj;
-    const ele = document.createElement(type);
+
+    let ele;
+    if (obj.type === 'img') {
+        ele = new Image();
+    } else {
+        ele = document.createElement(type);
+
+    }
 
     for (let prop in rest) {
-        if (prop === 'appendChild') {
+        if (typeof ele[prop] === 'function') {
             ele[prop](rest[prop]);
+        } else {
+            ele[prop] = rest[prop];
         }
-        ele[prop] = rest[prop];
     }
 
     return ele;    

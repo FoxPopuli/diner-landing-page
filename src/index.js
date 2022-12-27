@@ -6,7 +6,7 @@ import {headerFactory} from './header';
 const testItemsLeft = [
     {
         name: "Link 1",
-        ref: "#"
+        href: "#"
     },
     {
         name: "Link 2",
@@ -27,6 +27,6 @@ body.appendChild(
     headerFactory(testItemsLeft, testItemsRight)
 )
 
-console.log(getState())
+// console.log(getState())
 // console.log(test)
 // console.log(test.testFunc())

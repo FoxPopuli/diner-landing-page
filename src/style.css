@@ -1,6 +1,8 @@
 :root {
     --link-visited: #ca9c5e;
-    --default-font: Arial, sans-serif 
+    --default-font: Arial, sans-serif;
+    --icon-radius: 10px;
+    --icon-size: 20px;
 }
 
 * {
@@ -24,11 +26,12 @@ header {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin: 50px;
+    flex-wrap: wrap;
 }
 
 ul {
     display: flex;
-    margin: 50px;
     list-style: none;
 }
 
@@ -43,16 +46,31 @@ a {
     /* font-weight: */
     text-decoration: none;
     color: white;
+    margin: 15px;
 }
+
+
 
 a:hover, a:active {
     color: var(--link-visited);
+}
+
+header img {
+    width: var(--icon-size);
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     body {
         background-color: red;
+    }
+
+    ul {
+        display: none;
+    }
+
+    header button {
+        display: block;
     }
 }
 
@@ -61,11 +79,19 @@ a:hover, a:active {
     body {
         background-color: orange;
     }
+
+    header button {
+        display: none;
+    }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     body {
         background-color: blue;
+    }
+
+    header button {
+        display: none;
     }
 }
