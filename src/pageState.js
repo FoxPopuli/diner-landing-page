@@ -1,6 +1,6 @@
 export const getState = () => {
-    let isMobile = window.matchMedia('(max-width: 563px)');
-    let isTablet = window.matchMedia('(min-width: 564px) and (max-width: 960px)');
+    let isMobile = window.matchMedia('(max-width: 780px)');
+    let isTablet = window.matchMedia('(min-width: 781px) and (max-width: 960px)');
     let isDesktop = window.matchMedia('(min-width: 961px)');
     
     if (isMobile.matches) return 'mobile';

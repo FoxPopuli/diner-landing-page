@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --link-visited: #ca9c5e;\n    --default-font: Arial, sans-serif;\n    --icon-radius: 10px;\n    --large-icon-size: 40px;\n    --medium-icon-size: 30px;\n    --small-icon-size: 20px;\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: var(--default-font);\n}\n\nbody {\n    background-color: red;\n}\n\n/* Header Styles */\n\n\nheader {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100vw;\n    flex-wrap: wrap;\n}\n\nheader a, .side-nav a {\n    font-family: var(--default-font);\n    text-decoration: none;\n    color: white;\n    padding: 5px;\n}\n\na:hover, a:active {\n    color: var(--link-visited);\n}\n\nheader img {\n    width: var(--large-icon-size);\n    margin: 10px;\n}\n\n.social-links {\n    display: flex;\n}\n\nheader ul {\n    display: none;\n    list-style: none;\n}\n\nheader button {\n    display: block;\n}\n\nli {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.side-nav {\n    display: flex;\n    flex-direction: column;\n    width: 100vw;\n    background-color: #000;\n    align-items: center\n}\n\n/* Content Styles */\n.block1 {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: space-between;\n    height: 100%;\n\n}\n\n.block1 * {\n    display: flex;\n    justify-content: center;\n    text-align: center;\n}\n\n.block1 button {\n    width: 100px;\n}\n\n.block1 .button-div {\n    flex-direction: column;\n    justify-content: center;\n    padding: 10px;\n    \n}\n\n.button-div div {\n    margin: 20px;\n    border-radius: 5px;\n    border-top: 1px solid var(--link-visited);\n    border-bottom: 1px solid var(--link-visited);\n    width: 150px;\n    height: 50px;\n    display: flex;\n    align-items: center;\n    align-self: center;\n}\n/* Tablet Styles */\n@media only screen and (min-width: 563px) and (max-width: 960px) {\n    body {\n        background-color: orange;\n    }\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--medium-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n\n}\n\n/* Desktop Styles */\n@media only screen and (min-width: 961px) {\n    body {\n        background-color: blue;\n    }\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--small-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n}\n\n/* Toggles */\n.invis {\n    display: none\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,uBAAuB;IACvB,iCAAiC;IACjC,mBAAmB;IACnB,uBAAuB;IACvB,wBAAwB;IACxB,uBAAuB;AAC3B;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,gCAAgC;AACpC;;AAEA;IACI,qBAAqB;AACzB;;AAEA,kBAAkB;;;AAGlB;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,YAAY;IACZ,eAAe;AACnB;;AAEA;IACI,gCAAgC;IAChC,qBAAqB;IACrB,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,6BAA6B;IAC7B,YAAY;AAChB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;IACZ,sBAAsB;IACtB;AACJ;;AAEA,mBAAmB;AACnB;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,0BAA0B;IAC1B,YAAY;;AAEhB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;AACtB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,sBAAsB;IACtB,uBAAuB;IACvB,aAAa;;AAEjB;;AAEA;IACI,YAAY;IACZ,kBAAkB;IAClB,yCAAyC;IACzC,4CAA4C;IAC5C,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;AACA,kBAAkB;AAClB;IACI;QACI,wBAAwB;IAC5B;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,8BAA8B;IAClC;;IAEA;QACI,aAAa;IACjB;;AAEJ;;AAEA,mBAAmB;AACnB;IACI;QACI,sBAAsB;IAC1B;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,6BAA6B;IACjC;;IAEA;QACI,aAAa;IACjB;AACJ;;AAEA,YAAY;AACZ;IACI;AACJ","sourcesContent":[":root {\n    --link-visited: #ca9c5e;\n    --default-font: Arial, sans-serif;\n    --icon-radius: 10px;\n    --large-icon-size: 40px;\n    --medium-icon-size: 30px;\n    --small-icon-size: 20px;\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: var(--default-font);\n}\n\nbody {\n    background-color: red;\n}\n\n/* Header Styles */\n\n\nheader {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100vw;\n    flex-wrap: wrap;\n}\n\nheader a, .side-nav a {\n    font-family: var(--default-font);\n    text-decoration: none;\n    color: white;\n    padding: 5px;\n}\n\na:hover, a:active {\n    color: var(--link-visited);\n}\n\nheader img {\n    width: var(--large-icon-size);\n    margin: 10px;\n}\n\n.social-links {\n    display: flex;\n}\n\nheader ul {\n    display: none;\n    list-style: none;\n}\n\nheader button {\n    display: block;\n}\n\nli {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.side-nav {\n    display: flex;\n    flex-direction: column;\n    width: 100vw;\n    background-color: #000;\n    align-items: center\n}\n\n/* Content Styles */\n.block1 {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: space-between;\n    height: 100%;\n\n}\n\n.block1 * {\n    display: flex;\n    justify-content: center;\n    text-align: center;\n}\n\n.block1 button {\n    width: 100px;\n}\n\n.block1 .button-div {\n    flex-direction: column;\n    justify-content: center;\n    padding: 10px;\n    \n}\n\n.button-div div {\n    margin: 20px;\n    border-radius: 5px;\n    border-top: 1px solid var(--link-visited);\n    border-bottom: 1px solid var(--link-visited);\n    width: 150px;\n    height: 50px;\n    display: flex;\n    align-items: center;\n    align-self: center;\n}\n/* Tablet Styles */\n@media only screen and (min-width: 563px) and (max-width: 960px) {\n    body {\n        background-color: orange;\n    }\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--medium-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n\n}\n\n/* Desktop Styles */\n@media only screen and (min-width: 961px) {\n    body {\n        background-color: blue;\n    }\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--small-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n}\n\n/* Toggles */\n.invis {\n    display: none\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --link-visited: #ca9c5e;\n    --default-font: Arial, sans-serif;\n    --icon-radius: 10px;\n    --large-icon-size: 40px;\n    --medium-icon-size: 30px;\n    --small-icon-size: 20px;\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: var(--default-font);\n    color: white;\n}\n\nbody {\n    background-color: black;\n    display: flex;\n    justify-content: center;\n    max-width: 100vw;\n}\n\n.main {\n    display: flex;\n    flex-direction: column;\n    width: 80%;\n}\n\n/* Header Styles */\n\nheader {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 80vw;\n    flex-wrap: wrap;\n}\n\nheader a, .side-nav a {\n    font-family: var(--default-font);\n    text-decoration: none;\n    color: white;\n    padding: 5px;\n}\n\na:hover, a:active {\n    color: var(--link-visited);\n}\n\nheader img {\n    width: var(--large-icon-size);\n    margin: 10px;\n    filter: invert(100%)\n}\n\n.social-links {\n    display: flex;\n}\n\nheader ul {\n    display: none;\n    list-style: none;\n}\n\nheader button {\n    display: block;\n}\n\nli {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 20px;\n}\n\n.side-nav {\n    display: flex;\n    flex-direction: column;\n    width: 80vw;\n    background-color: #000;\n    align-items: center;\n}\n\n.side-nav ul li {\n    font-size: 30px;\n}\n\n/* Content Styles */\n.block1 {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: space-between;\n    height: 100%;\n}\n\n.block1 * {\n    display: flex;\n    justify-content: center;\n    text-align: center;\n}\n\nh1 {\n    font-size: 60px;\n}\n\n.block1 h1, .block1 h2 {\n    margin: 20px;\n}\n\n.block1 .button-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    padding: 10px;\n    \n}\n\n.button-div div {\n    margin: 30px 20px 30px 20px;\n    border-radius: 5px;\n    border-top: 2px solid var(--link-visited);\n    border-bottom: 2px solid var(--link-visited);\n    width: 150px;\n    height: 50px;\n    /* padding: 20px; */\n    padding: 20px 0 20px 0;\n    display: flex;\n    align-items: center;\n    align-self: center;\n\n    transition-property: padding, color, margin;\n    transition-duration: 0.25s;\n}\n\n.button-div div:hover {\n    /* height: 60px; */\n    margin: 20px;\n    padding: 30px 0 30px 0;\n    color: var(--link-visited)\n}\n/* Tablet Styles */\n@media only screen and (min-width: 780px) and (max-width: 960px) {\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--medium-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n\n    .block1 .button-div {\n        flex-direction: row;\n    }\n\n}\n\n/* Desktop Styles */\n@media only screen and (min-width: 961px) {\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--small-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n\n    header ul li {\n        margin: 0 10px 0 10px;\n    }\n\n    .block1 .button-div {\n        flex-direction: row;\n    }\n}\n\n/* Toggles */\n.invis {\n    display: none\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,uBAAuB;IACvB,iCAAiC;IACjC,mBAAmB;IACnB,uBAAuB;IACvB,wBAAwB;IACxB,uBAAuB;AAC3B;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,gCAAgC;IAChC,YAAY;AAChB;;AAEA;IACI,uBAAuB;IACvB,aAAa;IACb,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,UAAU;AACd;;AAEA,kBAAkB;;AAElB;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,WAAW;IACX,eAAe;AACnB;;AAEA;IACI,gCAAgC;IAChC,qBAAqB;IACrB,YAAY;IACZ,YAAY;AAChB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,6BAA6B;IAC7B,YAAY;IACZ;AACJ;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,WAAW;IACX,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,eAAe;AACnB;;AAEA,mBAAmB;AACnB;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,0BAA0B;IAC1B,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;AACtB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,aAAa;;AAEjB;;AAEA;IACI,2BAA2B;IAC3B,kBAAkB;IAClB,yCAAyC;IACzC,4CAA4C;IAC5C,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,sBAAsB;IACtB,aAAa;IACb,mBAAmB;IACnB,kBAAkB;;IAElB,2CAA2C;IAC3C,0BAA0B;AAC9B;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,sBAAsB;IACtB;AACJ;AACA,kBAAkB;AAClB;;IAEI;QACI,aAAa;IACjB;;IAEA;QACI,8BAA8B;IAClC;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,mBAAmB;IACvB;;AAEJ;;AAEA,mBAAmB;AACnB;;IAEI;QACI,aAAa;IACjB;;IAEA;QACI,6BAA6B;IACjC;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,qBAAqB;IACzB;;IAEA;QACI,mBAAmB;IACvB;AACJ;;AAEA,YAAY;AACZ;IACI;AACJ","sourcesContent":[":root {\n    --link-visited: #ca9c5e;\n    --default-font: Arial, sans-serif;\n    --icon-radius: 10px;\n    --large-icon-size: 40px;\n    --medium-icon-size: 30px;\n    --small-icon-size: 20px;\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: var(--default-font);\n    color: white;\n}\n\nbody {\n    background-color: black;\n    display: flex;\n    justify-content: center;\n    max-width: 100vw;\n}\n\n.main {\n    display: flex;\n    flex-direction: column;\n    width: 80%;\n}\n\n/* Header Styles */\n\nheader {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 80vw;\n    flex-wrap: wrap;\n}\n\nheader a, .side-nav a {\n    font-family: var(--default-font);\n    text-decoration: none;\n    color: white;\n    padding: 5px;\n}\n\na:hover, a:active {\n    color: var(--link-visited);\n}\n\nheader img {\n    width: var(--large-icon-size);\n    margin: 10px;\n    filter: invert(100%)\n}\n\n.social-links {\n    display: flex;\n}\n\nheader ul {\n    display: none;\n    list-style: none;\n}\n\nheader button {\n    display: block;\n}\n\nli {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 20px;\n}\n\n.side-nav {\n    display: flex;\n    flex-direction: column;\n    width: 80vw;\n    background-color: #000;\n    align-items: center;\n}\n\n.side-nav ul li {\n    font-size: 30px;\n}\n\n/* Content Styles */\n.block1 {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: space-between;\n    height: 100%;\n}\n\n.block1 * {\n    display: flex;\n    justify-content: center;\n    text-align: center;\n}\n\nh1 {\n    font-size: 60px;\n}\n\n.block1 h1, .block1 h2 {\n    margin: 20px;\n}\n\n.block1 .button-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    padding: 10px;\n    \n}\n\n.button-div div {\n    margin: 30px 20px 30px 20px;\n    border-radius: 5px;\n    border-top: 2px solid var(--link-visited);\n    border-bottom: 2px solid var(--link-visited);\n    width: 150px;\n    height: 50px;\n    /* padding: 20px; */\n    padding: 20px 0 20px 0;\n    display: flex;\n    align-items: center;\n    align-self: center;\n\n    transition-property: padding, color, margin;\n    transition-duration: 0.25s;\n}\n\n.button-div div:hover {\n    /* height: 60px; */\n    margin: 20px;\n    padding: 30px 0 30px 0;\n    color: var(--link-visited)\n}\n/* Tablet Styles */\n@media only screen and (min-width: 780px) and (max-width: 960px) {\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--medium-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n\n    .block1 .button-div {\n        flex-direction: row;\n    }\n\n}\n\n/* Desktop Styles */\n@media only screen and (min-width: 961px) {\n\n    header .menu-button {\n        display: none;\n    }\n\n    header img {\n        width: var(--small-icon-size);\n    }\n\n    header ul {\n        display: flex;\n    }\n\n    header ul li {\n        margin: 0 10px 0 10px;\n    }\n\n    .block1 .button-div {\n        flex-direction: row;\n    }\n}\n\n/* Toggles */\n.invis {\n    display: none\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -517,37 +517,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "content1": () => (/* binding */ content1)
 /* harmony export */ });
-/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ "./src/index.js");
-/* harmony import */ var _elementFactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./elementFactory */ "./src/elementFactory.js");
-
+/* harmony import */ var _elementFactory__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elementFactory */ "./src/elementFactory.js");
 
 // OT 392 410 26
 // 086 007 0000
 // 012 336 3823 
 // 6201285188080
-const content1 = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_1__["default"])({
+const content1 = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: 'div',
     className: 'block1'
 })
 
-const h1 = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_1__["default"])({
+const h1 = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: 'h1',
     textContent: 'Flavour, precision and perfection'
 })
 
-const h2 = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_1__["default"])({
+const h2 = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: 'h2',
     textContent: "Jane Doe's Diner is a diner owned by Jane Doe. We serve food and drinks."
 })
 
-const mainMenuButton = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_1__["default"])({
+const mainMenuButton = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: 'div',
     textContent: 'VIEW MAIN MENU'
 })
 
-const menuClick = () => {
-    console.log(undefined)
-}
 
 mainMenuButton.addEventListener('click', (e) => {
     console.log('mainMenuButton clicked')
@@ -558,18 +553,14 @@ mainMenuButton.addEventListener('click', (e) => {
     }
 })
 
+// mainMenuButton.addEventListener('click', menuClic)
 
-
-
-
-mainMenuButton.addEventListener('click', menuClick)
-
-const orderOnlineButton = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_1__["default"])({
+const orderOnlineButton = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: 'div',
     textContent: 'ORDER ONLINE'
 })
 
-const buttonEle = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_1__["default"])({
+const buttonEle = (0,_elementFactory__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: 'div',
     className: 'button-div'
 })
@@ -751,43 +742,6 @@ header.appendChild(socialLinks);
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "main": () => (/* binding */ main)
-/* harmony export */ });
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _pageState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pageState */ "./src/pageState.js");
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ "./src/header.js");
-/* harmony import */ var _sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sidebar */ "./src/sidebar.js");
-/* harmony import */ var _content1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content1 */ "./src/content1.js");
-
-
-
-
-
-
-const main = document.createElement('div');
-main.className = 'main';
-main.appendChild(_header__WEBPACK_IMPORTED_MODULE_2__.header);
-main.appendChild(_sidebar__WEBPACK_IMPORTED_MODULE_3__.sideBar);
-main.appendChild(_content1__WEBPACK_IMPORTED_MODULE_4__.content1)
-
-
-
-document.body.appendChild(main)
-
-// console.log(getState())
-// console.log(test)
-// console.log(test.testFunc())
-
-/***/ }),
-
 /***/ "./src/listFactory.js":
 /*!****************************!*\
   !*** ./src/listFactory.js ***!
@@ -823,8 +777,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getState": () => (/* binding */ getState)
 /* harmony export */ });
 const getState = () => {
-    let isMobile = window.matchMedia('(max-width: 563px)');
-    let isTablet = window.matchMedia('(min-width: 564px) and (max-width: 960px)');
+    let isMobile = window.matchMedia('(max-width: 780px)');
+    let isTablet = window.matchMedia('(min-width: 781px) and (max-width: 960px)');
     let isDesktop = window.matchMedia('(min-width: 961px)');
     
     if (isMobile.matches) return 'mobile';
@@ -1079,12 +1033,42 @@ module.exports = __webpack_require__.p + "ca6c102456ff1d9349cc.svg";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "main": () => (/* binding */ main)
+/* harmony export */ });
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _pageState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pageState */ "./src/pageState.js");
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ "./src/header.js");
+/* harmony import */ var _sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sidebar */ "./src/sidebar.js");
+/* harmony import */ var _content1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content1 */ "./src/content1.js");
+
+
+
+
+
+
+const main = document.createElement('div');
+main.className = 'main';
+main.appendChild(_header__WEBPACK_IMPORTED_MODULE_2__.header);
+main.appendChild(_sidebar__WEBPACK_IMPORTED_MODULE_3__.sideBar);
+main.appendChild(_content1__WEBPACK_IMPORTED_MODULE_4__.content1)
+
+
+
+document.body.appendChild(main)
+
+// console.log(getState())
+// console.log(test)
+// console.log(test.testFunc())
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
