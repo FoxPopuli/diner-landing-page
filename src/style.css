@@ -11,14 +11,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--default-font);
 }
 
-
-
-/* Element Styles */
 body {
-    background-color: #000;
+    background-color: red;
 }
+
+/* Header Styles */
+
 
 header {
     display: flex;
@@ -28,16 +29,11 @@ header {
     flex-wrap: wrap;
 }
 
-
-
 header a, .side-nav a {
     font-family: var(--default-font);
     text-decoration: none;
     color: white;
-    display: flex;
     padding: 5px;
-    justify-content: center;
-
 }
 
 a:hover, a:active {
@@ -51,10 +47,6 @@ header img {
 
 .social-links {
     display: flex;
-}
-
-body {
-    background-color: red;
 }
 
 header ul {
@@ -80,8 +72,43 @@ li {
     align-items: center
 }
 
-a {
+/* Content Styles */
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    height: 100%;
+
+}
+
+.block1 * {
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+
+.block1 button {
+    width: 100px;
+}
+
+.block1 .button-div {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.button-div div {
+    margin: 20px;
+    border-radius: 5px;
+    border-top: 1px solid var(--link-visited);
+    border-bottom: 1px solid var(--link-visited);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-self: center;
 }
 /* Tablet Styles */
 @media only screen and (min-width: 563px) and (max-width: 960px) {

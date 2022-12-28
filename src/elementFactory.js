@@ -4,14 +4,7 @@
 export default (obj) => {
     const {type, ...rest} = obj;
 
-    let ele;
-    if (obj.type === 'img') {
-        ele = new Image();
-    } else {
-        ele = document.createElement(type);
-
-    }
-
+    const ele = document.createElement(type);
     for (let prop in rest) {
         if (typeof ele[prop] === 'function') {
             ele[prop](rest[prop]);

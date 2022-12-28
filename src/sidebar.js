@@ -1,6 +1,7 @@
 import elementFactory from './elementFactory';
 import { listFactory } from './listFactory';
 import { paths } from './paths';
+import { getState } from './pageState';
 
 const nav1 = elementFactory({
     type: 'a',
@@ -39,5 +40,21 @@ export const sideBar = elementFactory({
     type: 'div',
     className: 'side-nav invis'
 })
+
+window.addEventListener('resize', () =>{
+
+    if (getState() !== 'mobile') {
+        sideBar.classList.add('invis');
+    }
+})
+
+// document.addEventListener('click', (e) => {
+
+//     console.log(sideBar.classList.contains('invis'))
+//     if (!e.target.closest('.side-nav') && !sideBar.classList.contains('invis')) {
+//         // console.log(!e.target.closest('.side-nav'))
+//         sideBar.classList.add('invis');
+//     }
+// })
 
 sideBar.appendChild(regularList)

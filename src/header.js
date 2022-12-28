@@ -91,7 +91,6 @@ const sideNavButton = elementFactory({
 
 sideNavButton.addEventListener('click', () => {
     sideBar.classList.toggle('invis');
-    console.log(sideBar)
 })
 
 // Media div
