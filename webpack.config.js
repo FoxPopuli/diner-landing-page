@@ -1,15 +1,30 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
-    output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist'),
-        // clean: true
+    entry: {
+        index: './src/index.js',
+        // elementFactory: './src/elementFactory.js',
+        // listFactory: '/src/listFactory.js',
+        // pageState: './src/pageState.js',
+        // paths: './src/paths.js',
+
+        // header: './src/header.js',
+        // sidebar: './src/sidebar.js',
+        // content1: './src/content1.js'
     },
-    devtool: 'source-map',
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Jane\'s Diner',
+        })
+    ],
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true
+    },
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
