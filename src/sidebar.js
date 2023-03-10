@@ -44,7 +44,6 @@ export const sideBar = elementFactory({
 window.addEventListener('resize', () =>{
 
     if (getState() !== 'mobile') {
-        console.log('tyes')
         sideBar.classList.add('invis');
     }
 })

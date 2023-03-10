@@ -56,7 +56,6 @@ const nav5 = elementFactory({
 
 const regularLinks = [nav1, nav2, nav3, nav4, nav5];
 const regularList = listFactory(regularLinks);
-console.log(regularList)
 
 // Social Media Links
 // facebook
