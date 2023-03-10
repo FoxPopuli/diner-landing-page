@@ -41,6 +41,7 @@ export const sideBar = elementFactory({
     className: 'side-nav invis'
 })
 
+// Closes
 window.addEventListener('resize', () =>{
 
     if (getState() !== 'mobile') {
@@ -48,13 +49,16 @@ window.addEventListener('resize', () =>{
     }
 })
 
-// document.addEventListener('click', (e) => {
+// Closes mobile menu when an out of bounds click is detected
+document.addEventListener('click', (e) => {
 
-//     console.log(sideBar.classList.contains('invis'))
-//     if (!e.target.closest('.side-nav') && !sideBar.classList.contains('invis')) {
-//         // console.log(!e.target.closest('.side-nav'))
-//         sideBar.classList.add('invis');
-//     }
-// })
+    if (!e.target.closest('.side-nav')) {
+        if (e.target.closest('.menu-button')) {
+            return
+        } else if (!sideBar.classList.contains('invis')) {
+            sideBar.classList.add('invis')
+        }
+    }
+})
 
 sideBar.appendChild(regularList)
