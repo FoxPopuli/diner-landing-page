@@ -41,7 +41,6 @@ export const sideBar = elementFactory({
     className: 'side-nav invis'
 })
 
-// Closes
 window.addEventListener('resize', () =>{
 
     if (getState() !== 'mobile') {

@@ -1,8 +1,5 @@
 import elementFactory from "./elementFactory";
-// OT 392 410 26
-// 086 007 0000
-// 012 336 3823 
-// 6201285188080
+
 export const content1 = elementFactory({
     type: 'div',
     className: 'block1'
@@ -23,17 +20,6 @@ const mainMenuButton = elementFactory({
     textContent: 'VIEW MAIN MENU'
 })
 
-
-mainMenuButton.addEventListener('click', (e) => {
-    console.log('mainMenuButton clicked')
-    console.log(e.target)
-    console.log(this)
-    if (e.target.closest('')) {
-        console.log('ayyy')
-    }
-})
-
-// mainMenuButton.addEventListener('click', menuClic)
 
 const orderOnlineButton = elementFactory({
     type: 'div',

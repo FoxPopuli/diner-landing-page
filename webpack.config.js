@@ -5,14 +5,6 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        // elementFactory: './src/elementFactory.js',
-        // listFactory: '/src/listFactory.js',
-        // pageState: './src/pageState.js',
-        // paths: './src/paths.js',
-
-        // header: './src/header.js',
-        // sidebar: './src/sidebar.js',
-        // content1: './src/content1.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -33,6 +25,10 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpeg|gif|jpg)$/i,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource'
             }
         ]
